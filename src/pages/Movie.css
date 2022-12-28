@@ -1,0 +1,53 @@
+.movie-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.details-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin: 50px 0;
+}
+
+.info h3,
+p {
+  margin: 15px 0px;
+}
+
+span {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.details {
+  text-align: center;
+}
+
+@media screen and (max-width: 1100px) {
+  .info-container {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+    .details-container {
+        grid-template-columns: 1fr;
+        margin: 0px auto;
+        gap: 0;
+      }
+
+    .info-container{
+        width: auto;
+        text-align: center;
+        margin: 0px 50px;
+    }
+  }

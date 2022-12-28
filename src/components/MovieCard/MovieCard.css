@@ -1,0 +1,36 @@
+.movie-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.movie-card img {
+  border-radius: 10px;
+  padding: 10px;
+  background-color: black;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 1100px) {
+  .movie-card img,
+  h1 {
+    width: 300px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .movie-card {
+    margin: 50px auto 10px auto;
+  }
+
+  .movie-card img,
+  h1 {
+    margin-left: 0px;
+  }
+}

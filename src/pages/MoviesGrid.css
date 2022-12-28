@@ -1,0 +1,88 @@
+:root{
+    --main-color: #ff006e;
+    --main-color-darker:#45021f;
+    --secondary-color: #4a6bee;
+    --secondary-color-darker: #18224a;
+}
+
+.container .title{
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 2rem 0 1rem;
+}
+
+.title .query-text{
+    color: var(--main-color);
+    font-size: 2.5rem;
+}
+
+.movies-container{
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    gap: 30px;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.movies-container div{
+    /* width: 30%; */
+    color: white;
+    margin-bottom: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color:black;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.movies-container div img{
+    max-width: 100%;
+}
+
+.movies-container div img,
+.movies-container div h2,
+.movies-container div p{
+    margin-bottom: 1rem;
+}
+
+.movies-container div svg{
+    color: var(--main-color);
+}
+
+
+.movies-container div a {
+    background-color: var(--main-color);
+    border: 2px solid var(--main-color);
+    border-radius: 4px;
+    color: black;
+    padding: 1rem 2.5rem;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    transition: .4s;
+    text-align: center;
+    font-weight: bold;
+}
+
+.movies-container div a:hover{
+    background-color: transparent;
+    color: var(--main-color);
+}
+
+@media screen and  (max-width: 1024px) {
+    .movies-container{
+        grid-template-columns: 2fr 2fr;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .movies-container{
+        grid-template-columns: 1fr;
+    }
+}
+
